@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventory"
+    android:background="@color/orange">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="634dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgcard"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Add to Inventory"
+            android:textStyle="bold"
+            android:textColor="#0F0F0F"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Create a new Item"
+            android:textColor="#3A3A3A"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/itemNameTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_editext"
+            android:hint="Item Name"
+            android:inputType="text"
+            android:paddingLeft="18dp" />
+
+        <EditText
+            android:id="@+id/itemDESTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_editext"
+            android:hint="Item Description"
+            android:inputType="text"
+            android:paddingLeft="18dp" />
+
+
+        <EditText
+            android:id="@+id/priceTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_editext"
+            android:hint="Price"
+            android:inputType="text"
+            android:paddingLeft="18dp" />
+
+        <EditText
+            android:id="@+id/categoryTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_editext"
+            android:hint="Category"
+            android:inputType="text"
+            android:paddingLeft="18dp" />
+
+        <EditText
+            android:id="@+id/imageTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_editext"
+            android:hint="Insert Image URL"
+            android:inputType="text"
+            android:paddingLeft="18dp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addtoinv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_btn"
+            android:text="Add to Inventory"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="28dp"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/orange"
+        tools:layout_editor_absoluteY="743dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/inventoryi"
+            android:layout_width="46dp"
+            android:layout_height="41dp"
+            android:background="@drawable/ic_baseline_inventory_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/statappi"
+            android:layout_width="46dp"
+            android:layout_height="41dp"
+            android:background="@drawable/ic_baseline_query_stats_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.800"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/trackingbtni"
+            android:layout_width="46dp"
+            android:layout_height="41dp"
+            android:background="@drawable/ic_baseline_delivery_dining_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
